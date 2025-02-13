@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply for a Funded Account - Mprops</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Background Video -->
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="background5.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="video-overlay"></div>
+
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">Maka<span>Props</span></div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="get-funded.html">Get Funded</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Application Form Section -->
+    <section class="application-form">
+      <div class="container">
+        <h1>Apply for a Funded Trading Account</h1>
+        <p>Fill in the form to apply for a Mprops funded account.</p>
+
+        <form id="apply-form" action="payment.html" method="POST">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+          <label for="experience">Trading Experience</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Tell us about your trading experience..."
+            required
+          ></textarea>
+          <div class="terms-container">
+            <input type="checkbox" id="terms" required />
+            <label for="terms"
+              >I agree to the
+              <a href="terms.html" target="_blank">Terms & Conditions</a></label
+            >
+          </div>
+
+          <button type="submit" class="btn" id="submit-btn" disabled>
+            Submit Application
+          </button>
+          >
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2025 Mprops. All Rights Reserved.
+        <a href="terms.html" class="btn">T&C Apply</a>
+      </p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
