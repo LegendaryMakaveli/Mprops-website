@@ -68,3 +68,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     validateForm();
   });
+
+
+  //email velidation
+  function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+  
+  // Example usage:
+  const email1 = "example@gmail.com";
+  const email2 = "example@gmail.com";
+  
+  console.log(validateEmail(email1)); // true
+  console.log(validateEmail(email2)); // false
