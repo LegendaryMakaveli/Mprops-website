@@ -82,6 +82,12 @@ nav {
     line-height: 1.6;
 }
 @media screen and (max-width: 768px){
+
+      .logo{
+        font-size: 50px;
+      }
+
+
     nav ul {
         display: none;
         flex-direction: column;
