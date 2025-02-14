@@ -43,6 +43,118 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: #0a0a0a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Mobile Navbar */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Form Styling */
+.form-container {
+    max-width: 400px;
+    margin: 100px auto; /* Adjust for proper spacing */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.form-container input, 
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}
+
+/* Checkbox */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+}
+
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -396,7 +508,7 @@ footer {
 .pricing-card .btn:hover {
     background: #0088cc;
 }
-/* Application Form Styles */
+Application Form Styles
 .application-form {
     padding: 80px 20px;
     text-align: center;
@@ -558,4 +670,109 @@ h1 {
 }
 .print-btn:hover {
     background: #218838;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+    padding-top: 60px; /* Adjusted for navbar spacing */
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: #0a0a0a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Mobile Navbar */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Page Containers */
+.page-container {
+    max-width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.page-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.page-container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Spacing for Mobile */
+@media screen and (max-width: 768px) {
+    .page-container {
+        padding: 20px;
+    }
+
+    .page-container h1 {
+        font-size: 24px;
+    }
+
+    .page-container p {
+        font-size: 16px;
+    }
 }

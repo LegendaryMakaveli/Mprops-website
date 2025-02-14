@@ -75,8 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   }
-  
-  // Example usage:
+
   const email1 = "example@gmail.com";
   const email2 = "example@gmail.com";
   
