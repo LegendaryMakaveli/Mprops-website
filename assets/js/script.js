@@ -81,3 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   console.log(validateEmail(email1)); // true
   console.log(validateEmail(email2)); // false
+
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('active');
+}
