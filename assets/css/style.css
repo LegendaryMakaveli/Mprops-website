@@ -82,14 +82,23 @@ nav {
     line-height: 1.6;
 }
 @media screen and (max-width: 768px){
-    nav{
-        display: flex;
-        justify-content: space-between;
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #11162A;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        text-align: center;
+        padding: 20px;
     }
-   ul {
-    width: 500px;
+    #menu-toggle {
+        display: block;
+    }
+   nav ul.show {
+    display: flex;
    }
-
 }
 /* Spacing for Mobile */
 @media screen and (max-width: 768px) {
@@ -106,12 +115,6 @@ nav {
     }
 }
 
-
-/* .nav-links a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-} */
-
 /* Mobile Navbar */
 @media screen and (max-width: 768px) {
     nav {
@@ -119,21 +122,6 @@ nav {
         align-items: center;
         padding: 10px;
     }
-
-    /* .nav-links {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        display: none;
-    } */
-
-    /* .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    } */
 }
 
 /* Form Styling */
@@ -647,14 +635,6 @@ Application Form Styles
     width: auto;
     margin-right: 10px;
 }
-/* .container {
-    max-width: 800px;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-} */
 h1 {
     text-align: center;
     color: #007bff;
@@ -699,4 +679,15 @@ h1 {
 }
 .print-btn:hover {
     background: #218838;
+}
+#menu-toggle {
+    /* display: none; */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    position: absolute;
+    right: 20px;
+
 }

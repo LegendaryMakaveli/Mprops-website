@@ -82,6 +82,25 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log(validateEmail(email1)); // true
   console.log(validateEmail(email2)); // false
 
-  function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('active');
-}
+
+  //toggle navigation menu
+
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  menuToggle.addEventListener("click", ()  => {
+      navLinks.classList.toggle("show");
+});
+
+
+
+//smooth scrolling
+document.querySelectorAll("nav ul li a").forEach(link =>  {
+      link.addEventListener("click", (e) =>  {
+        e.preventDefault();
+        const targetId = e.target.getAttribute("href").substring(1);
+        document.getElementById(targetId).scrollIntoView({
+             behaviour: "smooth"
+        });
+      });
+});
