@@ -86,7 +86,9 @@ nav {
         display: flex;
         justify-content: space-between;
     }
-
+   ul {
+    width: 500px;
+   }
 
 }
 /* Spacing for Mobile */
