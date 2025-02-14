@@ -83,9 +83,6 @@ nav {
 
 /* Responsive */
 @media screen and (min-width: 768px) {
-    /* .menu-icon {
-        display: none;
-    } */
 
     .nav-links {
         display: flex;
@@ -154,7 +151,7 @@ nav {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        display: none;
+        /* display: none; */
     }
 
     .nav-links.active {
